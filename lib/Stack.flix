@@ -44,4 +44,9 @@ namespace Stack {
     pub def peek[a](stack: Stack[a]): Option[a] = 
       let Stack(latestPopped, embeddedList) = stack;
         List.head(embeddedList)
+        
+    pub def eq[a](stack1: Stack[a], stack2: Stack[a]): Bool = 
+      let Stack(latestPopped1, embeddedList1) = stack1;
+      let Stack(latestPopped2, embeddedList2) = stack2;
+        List.eq(embeddedList1, embeddedList2) && Option.eq(latestPopped1, latestPopped2)
 }

@@ -17,3 +17,7 @@ def latestPopped() : Option[Int] = Stack.latestPopped(Stack.pop(Stack(None, 1 ::
 def peek() : Option[Int] = Stack.peek(Stack(None, 1 :: 2 :: Nil))
 
 def f(): Stack[Int] = Stack.pop(Stack.push(77, Stack.push(88, Stack.pop(Stack.push(99, Stack(None, 1 :: 2 :: Nil))))))
+
+def test(): Bool = Stack.isEmpty(Stack(None, 1 :: Nil))
+
+def eq(): Bool = Stack(Some(1), 2 :: Nil) == Stack.pop(Stack(None, 1 :: 2 :: Nil))
