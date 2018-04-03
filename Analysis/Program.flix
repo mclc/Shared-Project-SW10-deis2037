@@ -19,3 +19,7 @@ LdlocStm("ST_6", "LV_1").
 NegStm("ST_7", "ST_6").
 
 PopStm("ST_7").
+
+CeqStm("ST_8_1", "ST_5", "ST_4_2"). // Should not be tainted
+CeqStm("ST_8_2", "ST_6", "ST_4_2"). // Should be tained
+CeqStm("ST_8_3", "ST_5", "ST_7"). // Should be tained
