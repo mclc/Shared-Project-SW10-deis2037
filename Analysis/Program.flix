@@ -14,4 +14,6 @@ StlocStm("LV_1", "ST_4_1").
 StlocStm("LV_2", "ST_4_2").
 
 LdlocStm("ST_5", "LV_2").
-LdlocStm("ST_5", "LV_1").
+LdlocStm("ST_6", "LV_1").
+
+NegStm("ST_7", "ST_6").
