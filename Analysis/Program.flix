@@ -1,14 +1,17 @@
-LdcStm("LV_0", 3).        // ldc 3
-LdcStm("LV_1", 8).        // ldc 8
+LdcStm("ST_0", 3).        // ldc 3
+LdcStm("ST_1", 8).        // ldc 8
 
-LdcStm("LV_3", 2).        // ldc 2
+LdcStm("ST_3", 2).        // ldc 2
 
-DupStm("LV_2_1", "LV_1"). // dup
-DivStm("LV_2_2", "LV_2_1", "LV_3"). // div
-DivStm("LV_2_3", "LV_0", "LV_1"). // div
+DupStm("ST_2_1", "ST_1"). // dup
+DivStm("ST_2_2", "ST_2_1", "ST_3"). // div
+DivStm("ST_2_3", "ST_0", "ST_1"). // div
 
-AddStm("LV_4_1", "LV_0", "LV_2_2"). // add
-AddStm("LV_4_2", "LV_0", "LV_2_3"). // add
+AddStm("ST_4_1", "ST_0", "ST_2_2"). // add
+AddStm("ST_4_2", "ST_0", "ST_2_3"). // add
 
-LdargStm("AL_0", 1).
-LdargStm("AL_1", 2).
+StlocStm("LV_1", "ST_4_1").
+StlocStm("LV_2", "ST_4_2").
+
+LdlocStm("ST_5", "LV_2").
+LdlocStm("ST_5", "LV_1").

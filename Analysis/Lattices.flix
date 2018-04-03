@@ -1,3 +1,2 @@
-lat LocalVar(k: Str, v: Constant)
-lat ArgList(k: Str, v: Constant)
-lat TaintList(k: Str, t: Constant)
+lat TaintListLocalVar(k: Str, t: Constant)
+lat TaintListStack(k: Str, t: Constant)
