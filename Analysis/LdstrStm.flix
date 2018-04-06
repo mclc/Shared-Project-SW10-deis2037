@@ -1,3 +1,3 @@
-rel LdstrStm(r: Str, c: Int) 
+rel LdstrStm(r: Str, c: Str) 
 
 // No taint
