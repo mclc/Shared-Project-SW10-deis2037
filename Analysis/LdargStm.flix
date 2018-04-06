@@ -1,3 +1,4 @@
-rel LdargStm(r: Str, c: Int) 
+rel LdargStm(st: Str, a: Str) 
 
-// No taint
+TaintListStack(st, Top) :- LdargStm(st, a),
+                           TaintListArg(a, v).

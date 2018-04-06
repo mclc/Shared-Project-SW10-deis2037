@@ -1,3 +1,4 @@
-rel StargStm(r: Str, c: Int) 
+rel StargStm(a: Str, st: Str) 
 
-// No taint
+TaintListArg(a, Top) :- StargStm(a, st),
+                        TaintListStack(st, v).
