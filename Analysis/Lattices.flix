@@ -1,3 +1,5 @@
 lat TaintListLocalVar(k: Str, t: Constant)
 lat TaintListStack(k: Str, t: Constant)
 lat TaintListArg(k: Str, t: Constant)
+lat Sources(k: Str, t: Constant)
+lat Sinks(k: Str, t: Constant)
