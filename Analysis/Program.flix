@@ -1,4 +1,3 @@
-ForceTaint("RET_System.String System.Console::ReadLine()").
 
 // type_<Module>
 // type_SimpleCILProgram.Program
