@@ -1,4 +1,3 @@
-
 // type_<Module>
 // type_SimpleCILProgram.Program
 // method_System.Void SimpleCILProgram.Program::Main(System.String[])
@@ -12,11 +11,11 @@ CallStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_2", "RET_
 LdlocaStm("System.Void SimpleCILProgram.Program::Main(System.String[])_1", "System.Void SimpleCILProgram.Program::Main(System.String[])_0").
 StargStm("System.Boolean System.Int32::TryParse(System.String,System.Int32&)_1", "System.Void SimpleCILProgram.Program::Main(System.String[])_1").
 StargStm("System.Boolean System.Int32::TryParse(System.String,System.Int32&)_0", "System.Void SimpleCILProgram.Program::Main(System.String[])_0_2").
-CallStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_3", "RET_System.Boolean System.Int32::TryParse(System.String,System.Int32&)", "System.Boolean System.Int32::TryParse(System.String,System.Int32&)_0").
-LdcStm("System.Void SimpleCILProgram.Program::Main(System.String[])_1_1", 0).
+CallStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_3", "RET_System.Boolean System.Int32::TryParse(System.String,System.Int32&)", "System.Boolean System.Int32::TryParse(System.String,System.Int32&)").
+LdcStm("System.Void SimpleCILProgram.Program::Main(System.String[])_1_1", 0i32).
 CeqStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_4", "System.Void SimpleCILProgram.Program::Main(System.String[])_1_1", "System.Void SimpleCILProgram.Program::Main(System.String[])_0_3").
-StlocStm("System.Void SimpleCILProgram.Program::Main(System.String[])_2", "System.Void SimpleCILProgram.Program::Main(System.String[])_0_4").
-LdlocStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_5", "System.Void SimpleCILProgram.Program::Main(System.String[])_2").
+StlocStm("System.Void SimpleCILProgram.Program::Main(System.String[])_3", "System.Void SimpleCILProgram.Program::Main(System.String[])_0_4").
+LdlocStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_5", "System.Void SimpleCILProgram.Program::Main(System.String[])_3").
 NegStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_6", "System.Void SimpleCILProgram.Program::Main(System.String[])_0_5").
 BrtrueStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_6", 48).
 // nop
@@ -26,7 +25,7 @@ CallStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_8", "RET_
 // System.Void: Pop stack
 // nop
 LdcStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_9", 1).
-BrtrueStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_9", 256).
+BrtrueStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_9", 286).
 LdstrStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_10", "Input number 2: ").
 StargStm("System.Void System.Console::Write(System.String)_0", "System.Void SimpleCILProgram.Program::Main(System.String[])_0_10").
 CallStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_11", "RET_System.Void System.Console::Write(System.String)", "System.Void System.Console::Write(System.String)").
@@ -37,12 +36,12 @@ LdlocaStm("System.Void SimpleCILProgram.Program::Main(System.String[])_1_2", "Sy
 StargStm("System.Boolean System.Int32::TryParse(System.String,System.Int32&)_1", "System.Void SimpleCILProgram.Program::Main(System.String[])_1_2").
 StargStm("System.Boolean System.Int32::TryParse(System.String,System.Int32&)_0", "System.Void SimpleCILProgram.Program::Main(System.String[])_0_12").
 CallStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_13", "RET_System.Boolean System.Int32::TryParse(System.String,System.Int32&)", "System.Boolean System.Int32::TryParse(System.String,System.Int32&)").
-LdcStm("System.Void SimpleCILProgram.Program::Main(System.String[])_1_3", 0).
+LdcStm("System.Void SimpleCILProgram.Program::Main(System.String[])_1_3", 0i32).
 CeqStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_14", "System.Void SimpleCILProgram.Program::Main(System.String[])_1_3", "System.Void SimpleCILProgram.Program::Main(System.String[])_0_13").
-StlocStm("System.Void SimpleCILProgram.Program::Main(System.String[])_3", "System.Void SimpleCILProgram.Program::Main(System.String[])_0_14").
-LdlocStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_15", "System.Void SimpleCILProgram.Program::Main(System.String[])_3").
+StlocStm("System.Void SimpleCILProgram.Program::Main(System.String[])_4", "System.Void SimpleCILProgram.Program::Main(System.String[])_0_14").
+LdlocStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_15", "System.Void SimpleCILProgram.Program::Main(System.String[])_4").
 NegStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_16", "System.Void SimpleCILProgram.Program::Main(System.String[])_0_15").
-BrtrueStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_16", 95).
+BrtrueStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_16", 97).
 // nop
 LdstrStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_17", "Not a valid number").
 StargStm("System.Void System.Console::WriteLine(System.String)_0", "System.Void SimpleCILProgram.Program::Main(System.String[])_0_17").
@@ -50,7 +49,7 @@ CallStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_18", "RET
 // System.Void: Pop stack
 // nop
 LdcStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_19", 1).
-BrtrueStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_19", 256).
+BrtrueStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_19", 286).
 LdstrStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_20", "{0} + {1} = {2}").
 LdlocStm("System.Void SimpleCILProgram.Program::Main(System.String[])_1_4", "System.Void SimpleCILProgram.Program::Main(System.String[])_0").
 // box
@@ -123,13 +122,35 @@ StargStm("System.Void System.Console::WriteLine(System.String)_0", "System.Void 
 CallStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_31", "RET_System.Void System.Console::WriteLine(System.String)", "System.Void System.Console::WriteLine(System.String)").
 // System.Void: Pop stack
 // nop
-LdstrStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_32", "Press any key to exit...").
-StargStm("System.Void System.Console::WriteLine(System.String)_0", "System.Void SimpleCILProgram.Program::Main(System.String[])_0_32").
-CallStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_33", "RET_System.Void System.Console::WriteLine(System.String)", "System.Void System.Console::WriteLine(System.String)").
+LdlocStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_32", "System.Void SimpleCILProgram.Program::Main(System.String[])_0").
+LdcStm("System.Void SimpleCILProgram.Program::Main(System.String[])_1_8", 42i32).
+CeqStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_33", "System.Void SimpleCILProgram.Program::Main(System.String[])_1_8", "System.Void SimpleCILProgram.Program::Main(System.String[])_0_32").
+StlocStm("System.Void SimpleCILProgram.Program::Main(System.String[])_5", "System.Void SimpleCILProgram.Program::Main(System.String[])_0_33").
+LdlocStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_34", "System.Void SimpleCILProgram.Program::Main(System.String[])_5").
+NegStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_35", "System.Void SimpleCILProgram.Program::Main(System.String[])_0_34").
+BrtrueStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_35", 258).
+// nop
+LdcStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_36", 1i32).
+StlocStm("System.Void SimpleCILProgram.Program::Main(System.String[])_2", "System.Void SimpleCILProgram.Program::Main(System.String[])_0_36").
+// nop
+LdcStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_37", 1).
+BrtrueStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_37", 262).
+// nop
+LdcStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_38", 2i32).
+StlocStm("System.Void SimpleCILProgram.Program::Main(System.String[])_2_1", "System.Void SimpleCILProgram.Program::Main(System.String[])_0_38").
+// nop
+LdlocStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_39", "System.Void SimpleCILProgram.Program::Main(System.String[])_2_1").
+StargStm("System.Void System.Console::WriteLine(System.Int32)_0", "System.Void SimpleCILProgram.Program::Main(System.String[])_0_39").
+CallStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_40", "RET_System.Void System.Console::WriteLine(System.Int32)", "System.Void System.Console::WriteLine(System.Int32)").
 // System.Void: Pop stack
 // nop
-CallStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_34", "RET_System.ConsoleKeyInfo System.Console::ReadKey()", "System.ConsoleKeyInfo System.Console::ReadKey()").
-PopStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_34").
+LdstrStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_41", "Press any key to exit...").
+StargStm("System.Void System.Console::WriteLine(System.String)_0", "System.Void SimpleCILProgram.Program::Main(System.String[])_0_41").
+CallStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_42", "RET_System.Void System.Console::WriteLine(System.String)", "System.Void System.Console::WriteLine(System.String)").
+// System.Void: Pop stack
+// nop
+CallStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_43", "RET_System.ConsoleKeyInfo System.Console::ReadKey()", "System.ConsoleKeyInfo System.Console::ReadKey()").
+PopStm("System.Void SimpleCILProgram.Program::Main(System.String[])_0_43").
 RetStm("RET_System.Void SimpleCILProgram.Program::Main(System.String[])").
 // method_System.Void SimpleCILProgram.Program::.ctor()
 LdargStm("System.Void SimpleCILProgram.Program::.ctor()_0", "System.Void SimpleCILProgram.Program::.ctor()_0").
