@@ -20,3 +20,5 @@ TaintListStack(st, Top) :- CallStm(st, ret, name),
                            
                            
 def isTryParse(s: Str): Bool = String.contains(s, "TryParse")
+
+def argCount(s: Str): Int = List.count(x -> x == ',', String.toList(s)) + 1
