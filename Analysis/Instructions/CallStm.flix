@@ -3,7 +3,7 @@ rel CallStm(st: Str, ret: Str, name: Str)
 // If a method call to a sink is made, check if it's tainted and save
 Results(name, Top) :- CallStm(st, ret, name),
                       Sinks(name, v),
-                      TaintListStack(ret, x).
+                      TaintListStack(ret, x). // Should be changed to check if any arg is in TaintListArg
 
 // If a method call to a source it made, mark as tainted
 TaintListStack(ret, alpha(name)) :- CallStm(st, ret, name),
