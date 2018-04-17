@@ -1,4 +1,4 @@
 rel LdfldaStm(st: Str, lv: Str) 
 
-TaintListStack(st, Top) :- LdfldaStm(st, lv),
-                           TaintListField(lv, v).
+TaintListStack(st, source) :- LdfldaStm(st, lv),
+                              TaintListField(lv, source).
