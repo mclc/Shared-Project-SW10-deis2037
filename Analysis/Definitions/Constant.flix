@@ -1,7 +1,7 @@
 enum Constant {
       case Top,
 
-	case Cst(Int),
+	  case Cst(Str),
 
       case Bot
 }
@@ -31,4 +31,4 @@ def glb(e1: Constant, e2: Constant): Constant = match (e1, e2) with {
 
 let Constant<> = (Bot, Top, equ, leq, lub, glb)
 
-def alpha(i: Int): Constant = Cst(i)
+def alpha(s: Str): Constant = Cst(s)

@@ -1,0 +1,7 @@
+rel TaintListLocalVar(localVar: Str, source: Str)
+rel TaintListStack(stackElement: Str, source: Str)
+rel TaintListArg(method: Str, argNo: Int, source: Str)
+rel Results(source: Str, sink: Str)
+rel TaintListField(field: Str, source: Str)
+rel Sources(k: Str)
+rel Sinks(k: Str)

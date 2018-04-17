@@ -1,4 +1,4 @@
 rel LdlocStm(st: Str, lv: Str) 
 
-TaintListStack(st, Top) :- LdlocStm(st, lv),
-                           TaintListLocalVar(lv, v).
+TaintListStack(st, source) :- LdlocStm(st, lv),
+                              TaintListLocalVar(lv, source).

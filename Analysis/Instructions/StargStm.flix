@@ -1,4 +1,4 @@
-rel StargStm(a: Str, st: Str) 
+rel StargStm(a: Str, st: Str, number: Int) 
 
-TaintListArg(a, Top) :- StargStm(a, st),
-                        TaintListStack(st, v).
+TaintListArg(a, number, source) :- StargStm(a, st, number),
+                                   TaintListStack(st, source).
