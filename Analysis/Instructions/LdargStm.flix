@@ -1,4 +1,4 @@
 rel LdargStm(st: Str, a: Str) 
 
-TaintListStack(st, source) :- LdargStm(st, a),
-                              TaintListArg(a, argNo, source).
+TaintListStack(st, source, type) :- LdargStm(st, a),
+                                    TaintListArg(a, argNo, source, type).
