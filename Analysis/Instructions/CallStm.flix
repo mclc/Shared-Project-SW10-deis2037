@@ -9,21 +9,16 @@ Results(source, name, type) :- CallStm(st, ret, name, x),
 TaintListStack(ret, name, type) :- CallStm(st, ret, name, type),
                                    Sources(name, v).  
 
-// If the method is TryParse, the result should be tainted if argument 0 is.
+// If the method is defined in firstArgumentTainted, the result should be tainted if the first argument is.
 TaintListStack(ret, source, type) :- CallStm(st, ret, name, x),
-                                     isTryParse(name),
+                                     firstArgumentTaint(name),
                                      TaintListArg(name, 0, source, type).
 
-// If the method is String.Concat, the result should be tainted if any argument is.
+// If the method is defined in anyArgumentTainted, the result should be tainted if any argument is.
 TaintListStack(ret, source, type) :- CallStm(st, ret, name, type),
-                                     isStringConcat(name),
+                                     anyArgumentTaint(name),
                                      TaintListArg(name, argNo, source, x).
 
 // If the return value is tainted, so should the value pushed to the stack be
 TaintListStack(st, source, type) :- CallStm(st, ret, name, x),
                                     TaintListStack(ret, source, type).  
-                           
-                           
-def isTryParse(s: Str): Bool = String.contains(s, "TryParse")
-
-def isStringConcat(s: Str): Bool = String.contains(s, "System.String::Concat")
