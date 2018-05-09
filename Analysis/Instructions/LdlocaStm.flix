@@ -1,4 +1,4 @@
 rel LdlocaStm(st: Str, lv: Str) 
 
-TaintListStack(st, source, type) :- LdlocaStm(st, lv),
-                                    TaintListLocalVar(lv, source, type).
+// Create reference between the local variable and the stack position
+PointerTable(st, lv) :- LdlocaStm(st, lv).
