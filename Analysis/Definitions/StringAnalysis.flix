@@ -53,6 +53,9 @@ namespace StringAnalysis {
     pub def abstract (s: Str): Charset =
         Charset(s, s)
         
+    pub def definition (may: Str, must: Str): Charset =
+        Charset(may, must)
+        
     pub def mayEqual (e1: Charset, e2: Charset): Bool = match (e1, e2) with {
         case (Top, _) => true
         
@@ -80,7 +83,7 @@ namespace StringAnalysis {
         List.foldLeft((acc, c) -> String.concat(acc, Char.toString(c)), "", Set.toList(xs))
         
     // Used for hack
-    def toSet(s: Str): Set[Char] = List.toSet(List.map(i -> String.charAt(i, s), List.range(0, String.length(s))))
+    pub def toSet(s: Str): Set[Char] = List.toSet(List.map(i -> String.charAt(i, s), List.range(0, String.length(s))))
     
     let Charset<> = (Bot, Top, equ, leq, lub, glb)
 }
