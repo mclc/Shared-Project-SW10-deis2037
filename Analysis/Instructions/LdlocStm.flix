@@ -8,3 +8,6 @@ TaintListStack(st, source, type) :- LdlocStm(st, lv),
 TaintListStack(st, source, type) :- LdlocStm(st, lv),
                                     PointerTable(x, lv),
                                     TaintListStack(x, source, type).
+                                    
+StringLattice(st, charset) :- LdlocStm(st, lv),
+                              StringLattice(lv, charset).

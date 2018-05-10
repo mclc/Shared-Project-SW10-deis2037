@@ -53,7 +53,7 @@ namespace StringAnalysis {
     pub def abstract (s: Str): Charset =
         Charset(s, s)
         
-    def mayEqual (e1: Charset, e2: Charset): Bool = match (e1, e2) with {
+    pub def mayEqual (e1: Charset, e2: Charset): Bool = match (e1, e2) with {
         case (Top, _) => true
         
         case (Charset(may1, must1), Charset(may2, must2)) =>
@@ -64,7 +64,7 @@ namespace StringAnalysis {
         case _ => true
     }
     
-    def concat (e1: Charset, e2: Charset): Charset = match (e1, e2) with {
+    pub def concat (e1: Charset, e2: Charset): Charset = match (e1, e2) with {
         case (Top, x) => Top
         
         case (Charset(may1, must1), Charset(may2, must2)) => 
@@ -81,7 +81,6 @@ namespace StringAnalysis {
         
     // Used for hack
     def toSet(s: Str): Set[Char] = List.toSet(List.map(i -> String.charAt(i, s), List.range(0, String.length(s))))
-
+    
     let Charset<> = (Bot, Top, equ, leq, lub, glb)
-
 }

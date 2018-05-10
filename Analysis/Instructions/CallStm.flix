@@ -22,3 +22,14 @@ TaintListStack(ret, source, type) :- CallStm(st, ret, name, type),
 // If the return value is tainted, so should the value pushed to the stack be
 TaintListStack(st, source, type) :- CallStm(st, ret, name, x),
                                     TaintListStack(ret, source, type).  
+               
+
+               
+StringLattice(result, StringAnalysis.concat(charset0, charset1)) :- CallStm(result, ret, name, x),
+                                                                    isConcat(name),
+                                                                    StargStm(name, st0, 0, type0),
+                                                                    StargStm(name, st1, 1, type1),
+                                                                    StringLattice(st0, charset0),
+                                                                    StringLattice(st1, charset1).
+                                                       
+def isConcat(s: Str): Bool = String.contains(s, "System.String::Concat(System.String,System.String)")
