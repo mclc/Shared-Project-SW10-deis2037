@@ -1,5 +1,5 @@
 rel AddToSinks(r: Str) 
-Sinks(r, Top) :- AddToSinks(r).
+Sinks(r) :- AddToSinks(r).
 
 AddToSinks("System.Console::WriteLine(System.String)").
 AddToSinks("System.Console::WriteLine(System.Int32)").
