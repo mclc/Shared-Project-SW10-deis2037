@@ -1,7 +1,7 @@
 SecretStrings(st, v) :- StringLattice(st, v),
                         mayBeSecret(v).
                         
-SecretStrings("basicAuth", v) :- StringLattice(st, v),
+SecretStrings(st, v) :- StringLattice(st, v),
                         maybeHttpBasicAuth(v).
                            
 def mayBeSecret(cs: StringAnalysis.Charset): Bool = 
