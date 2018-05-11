@@ -1,5 +1,5 @@
 rel AddToSources(r: Str) 
-Sources(r, r) :- AddToSources(r).
+Sources(r) :- AddToSources(r).
 
 AddToSources("System.Console::ReadLine()").
 AddToSources("System.Console::ReadKey()").

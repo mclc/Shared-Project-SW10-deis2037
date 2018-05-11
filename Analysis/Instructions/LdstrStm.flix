@@ -1,3 +1,3 @@
 rel LdstrStm(r: Str, c: Str) 
 
-// No taint
+StringLattice(r, StringAnalysis.abstract(c)) :- LdstrStm(r, c).

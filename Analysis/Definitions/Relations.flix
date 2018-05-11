@@ -6,3 +6,8 @@ rel TaintListField(field: Str, source: Str, type: Str)
 rel PointerTable(st: Str, lv: Str)
 rel Sources(k: Str)
 rel Sinks(k: Str)
+
+lat SecretStrings(k: Str, v: StringAnalysis.Charset)
+lat StringLattice(k: Str, v: StringAnalysis.Charset)
+
+
