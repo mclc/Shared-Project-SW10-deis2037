@@ -60,7 +60,7 @@ namespace StringAnalysis {
         case (Top, _) => true
         
         case (Charset(may1, must1), Charset(may2, must2)) =>
-            Set.isSubsetOf(toSet(must1), toSet(may2)) || Set.isSubsetOf(toSet(must2), toSet(may1))
+            Set.isSubsetOf(toSet(must1), toSet(may2)) && Set.isSubsetOf(toSet(must2), toSet(may1))
             
         case (_, Bot) => true
         

@@ -7,11 +7,12 @@
 // Node nop, offset: 0, pop: 0, push: 0
 // nop
 // Node ldstr, offset: 1, pop: 0, push: 1
+
 LdstrStm("st_SimpleCILProgram.Program::Main(System.String[])_0_0", "http://username").
 // Node stloc, offset: 6, pop: 1, push: 0
 StlocStm("loc_SimpleCILProgram.Program::Main(System.String[])_0_0", "st_SimpleCILProgram.Program::Main(System.String[])_0_0").
 // Node ldstr, offset: 7, pop: 0, push: 1
-LdstrStm("st_SimpleCILProgram.Program::Main(System.String[])_0_1", ":passwordmclc.dk").
+LdstrStm("st_SimpleCILProgram.Program::Main(System.String[])_0_1", ":password@mclc.dk").
 // Node stloc, offset: 12, pop: 1, push: 0
 StlocStm("loc_SimpleCILProgram.Program::Main(System.String[])_1_0", "st_SimpleCILProgram.Program::Main(System.String[])_0_1").
 // Node ldloc, offset: 13, pop: 0, push: 1
