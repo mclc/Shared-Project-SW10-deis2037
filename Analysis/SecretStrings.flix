@@ -8,4 +8,4 @@ def mayBeSecret(cs: StringAnalysis.Charset): Bool =
     StringAnalysis.mayEqual(cs, StringAnalysis.abstract("secret"))
     
 def maybeHttpBasicAuth(cs: StringAnalysis.Charset): Bool = 
-    StringAnalysis.mayEqual(cs, StringAnalysis.definition("abcdefghijklmnopqrstuvxyz.:/@_", "htp:/@"))
+    StringAnalysis.mayEqual(cs, StringAnalysis.definition("abcdefghijklmnopqrstuvxyz.:/@_-", "htp:/@"))
