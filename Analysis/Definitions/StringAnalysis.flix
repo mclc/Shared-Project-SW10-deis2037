@@ -51,10 +51,10 @@ namespace StringAnalysis {
     }
 
     pub def abstract (s: Str): Charset =
-        Charset(s, s)
+        Charset(toString(toSet(s)), toString(toSet(s)))
         
     pub def definition (may: Str, must: Str): Charset =
-        Charset(may, must)
+        Charset(toString(toSet(may)), toString(toSet(must)))
         
     pub def mayEqual (e1: Charset, e2: Charset): Bool = match (e1, e2) with {
         case (Top, _) => true
