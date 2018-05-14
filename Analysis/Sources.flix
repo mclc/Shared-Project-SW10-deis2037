@@ -8,6 +8,7 @@ AddToSources("System.ConsoleKeyInfo::get_KeyChar()").
 AddToSources("Plugin.Geolocator.CrossGeolocator::get_Current()").
 AddToSources("Plugin.Geolocator.Abstractions.Position::get_Longitude()").
 AddToSources("Plugin.Geolocator.Abstractions.Position::get_Latitude()").
+AddToSources("Plugin.Geolocator.Abstractions.IGeolocator::GetLastKnownLocationAsync()").
 
 AddToSources("Android.Telephony.TelephonyManager::get_DeviceId()").
 AddToSources("Android.Telephony.TelephonyManager::get_AllCellInfo").
@@ -24,3 +25,6 @@ AddToSources("System.IO.File::ReadAllLines(System.String,System.Text.Encoding)")
 AddToSources("System.IO.File::ReadLines(System.String)").
 AddToSources("System.IO.File::ReadLines(System.String,System.Text.Encoding)").
 AddToSources("System.IO.File::ReadAllBytes(System.String)").
+AddToSources("System.IO.File::OpenText(System.String)").
+AddToSources("System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32)").
+AddToSources("System.IO.Stream::ReadByte()").
