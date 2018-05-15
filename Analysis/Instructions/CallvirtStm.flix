@@ -35,5 +35,3 @@ StringLattice(result, StringAnalysis.concat(charset0, charset1)) :- CallvirtStm(
                                                                     StargStm(name, st1, 1, type1),
                                                                     StringLattice(st0, charset0),
                                                                     StringLattice(st1, charset1).
-                                                       
-def isConcat(s: Str): Bool = String.contains(s, "System.String::Concat(System.String,System.String)")
