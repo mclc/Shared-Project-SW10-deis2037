@@ -11,12 +11,12 @@ AddToSources("Plugin.Geolocator.Abstractions.Position::get_Latitude()").
 AddToSources("Plugin.Geolocator.Abstractions.IGeolocator::GetLastKnownLocationAsync()").
 
 AddToSources("Android.Telephony.TelephonyManager::get_DeviceId()").
-AddToSources("Android.Telephony.TelephonyManager::get_AllCellInfo").
-AddToSources("Android.Telephony.TelephonyManager::get_CellLocation").
-AddToSources("Android.Telephony.TelephonyManager::get_DeviceSoftwareVersion").
-AddToSources("Android.Telephony.TelephonyManager::get_Line1Number").
-AddToSources("Android.Telephony.TelephonyManager::get_SimSerialNumber").
-AddToSources("Android.Telephony.TelephonyManager::get_SubscriberId").
+AddToSources("Android.Telephony.TelephonyManager::get_AllCellInfo()").
+AddToSources("Android.Telephony.TelephonyManager::get_CellLocation()").
+AddToSources("Android.Telephony.TelephonyManager::get_DeviceSoftwareVersion()").
+AddToSources("Android.Telephony.TelephonyManager::get_Line1Number()").
+AddToSources("Android.Telephony.TelephonyManager::get_SimSerialNumber()").
+AddToSources("Android.Telephony.TelephonyManager::get_SubscriberId()").
 
 AddToSources("System.IO.File::ReadAllText(System.String)").
 AddToSources("System.IO.File::ReadAllText(System.String,System.Text.Encoding)").
