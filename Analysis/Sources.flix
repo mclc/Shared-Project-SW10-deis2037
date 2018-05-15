@@ -28,3 +28,6 @@ AddToSources("System.IO.File::ReadAllBytes(System.String)").
 AddToSources("System.IO.File::OpenText(System.String)").
 AddToSources("System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32)").
 AddToSources("System.IO.Stream::ReadByte()").
+
+AddToSources("System.IO.File::ReadAllTextAsync(System.String,System.Threading.CancellationToken)").
+AddToSources("System.IO.File::ReadAllTextAsync(System.String,System.Text.Encoding,System.Threading.CancellationToken)").
