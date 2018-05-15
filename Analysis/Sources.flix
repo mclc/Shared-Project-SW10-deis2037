@@ -31,3 +31,20 @@ AddToSources("System.IO.Stream::ReadByte()").
 
 AddToSources("System.IO.File::ReadAllTextAsync(System.String,System.Threading.CancellationToken)").
 AddToSources("System.IO.File::ReadAllTextAsync(System.String,System.Text.Encoding,System.Threading.CancellationToken)").
+AddToSources("System.IO.File::ReadAllBytesAsync(System.String,System.Threading.CancellationToken)").
+AddToSources("System.IO.File::ReadAllLinesAsync(System.String,System.Text.Encoding,System.Threading.CancellationToken)").
+AddToSources("System.IO.File::ReadAllLinesAsync(System.String,System.Text.Encoding,System.Threading.CancellationToken)").
+
+AddToSources("System.Net.Http.HttpClient::GetAsync(System.String)").
+AddToSources("System.Net.Http.HttpClient::GetAsync(System.Uri)", "System.Net.Http.HttpClient::GetAsync(System.Uri)").
+AddToSources("System.Net.Http.HttpClient::GetAsync(System.String,System.Net.Http.HttpCompletionOption)").
+AddToSources("System.Net.Http.HttpClient::GetAsync(System.String,System.Threading.CancellationToken)").
+AddToSources("System.Net.Http.HttpClient::GetAsync(System.Uri,System.Threading.CancellationToken)").
+AddToSources("System.Net.Http.HttpClient::GetAsync(System.Uri,System.Net.Http.HttpCompletionOption)").
+AddToSources("System.Net.Http.HttpClient::GetAsync(System.String,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)").
+AddToSources("System.Net.Http.HttpClient::GetAsync(System.Uri,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)").
+
+AddToSources("System.Net.Http.HttpClient::GetByteArrayAsync(System.String)").
+AddToSources("System.Net.Http.HttpClient::GetByteArrayAsync(System.Uri)").
+AddToSources("System.Net.Http.HttpClient::GetStringAsync(System.String)").
+AddToSources("System.Net.Http.HttpClient::GetStringAsync(System.Uri)").
