@@ -36,7 +36,7 @@ AddToSources("System.IO.File::ReadAllLinesAsync(System.String,System.Text.Encodi
 AddToSources("System.IO.File::ReadAllLinesAsync(System.String,System.Text.Encoding,System.Threading.CancellationToken)").
 
 AddToSources("System.Net.Http.HttpClient::GetAsync(System.String)").
-AddToSources("System.Net.Http.HttpClient::GetAsync(System.Uri)", "System.Net.Http.HttpClient::GetAsync(System.Uri)").
+AddToSources("System.Net.Http.HttpClient::GetAsync(System.Uri)").
 AddToSources("System.Net.Http.HttpClient::GetAsync(System.String,System.Net.Http.HttpCompletionOption)").
 AddToSources("System.Net.Http.HttpClient::GetAsync(System.String,System.Threading.CancellationToken)").
 AddToSources("System.Net.Http.HttpClient::GetAsync(System.Uri,System.Threading.CancellationToken)").
