@@ -48,3 +48,8 @@ AddToSources("System.Net.Http.HttpClient::GetByteArrayAsync(System.String)").
 AddToSources("System.Net.Http.HttpClient::GetByteArrayAsync(System.Uri)").
 AddToSources("System.Net.Http.HttpClient::GetStringAsync(System.String)").
 AddToSources("System.Net.Http.HttpClient::GetStringAsync(System.Uri)").
+
+AddToSources("System.Net.Http.HttpClient::SendAsync(System.Net.Http.HttpRequestMessage)").
+AddToSources("System.Net.Http.HttpMessageInvoker::SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)").
+AddToSources("System.Net.Http.HttpClient::SendAsync(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpCompletionOption)").
+AddToSources("System.Net.Http.HttpClient::SendAsync(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)").
