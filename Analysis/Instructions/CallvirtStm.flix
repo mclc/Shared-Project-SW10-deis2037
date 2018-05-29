@@ -26,12 +26,3 @@ TaintListTask(ret, "UNKNOWN", type) :- CallvirtStm(st, ret, name, type, isTask),
 // If the return value is tainted, so should the value pushed to the stack be
 TaintListStack(st, source, type) :- CallvirtStm(st, ret, name, x, isTask),
                                     TaintListStack(ret, source, type).  
-               
-
-               
-StringLattice(result, StringAnalysis.concat(charset0, charset1)) :- CallvirtStm(result, ret, name, x, isTask),
-                                                                    isConcat(name),
-                                                                    StargStm(name, st0, 0, type0),
-                                                                    StargStm(name, st1, 1, type1),
-                                                                    StringLattice(st0, charset0),
-                                                                    StringLattice(st1, charset1).

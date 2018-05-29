@@ -30,12 +30,7 @@ TaintListStack(st, source, type) :- CallStm(st, ret, name, x, isTask),
                
 
                
-StringLattice(result, StringAnalysis.concat(charset0, charset1)) :- CallStm(result, ret, name, x, isTask),
-                                                                    isConcat(name),
-                                                                    StargStm(name, st0, 0, type0),
-                                                                    StargStm(name, st1, 1, type1),
-                                                                    StringLattice(st0, charset0),
-                                                                    StringLattice(st1, charset1).
+
                                                        
 def isConcat(s: Str): Bool = String.contains(s, "System.String::Concat(System.String,System.String)")
 
