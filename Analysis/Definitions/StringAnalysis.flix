@@ -87,3 +87,25 @@ namespace StringAnalysis {
     
     let Charset<> = (Bot, Top, equ, leq, lub, glb)
 }
+
+StringLattice(result, StringAnalysis.concat(charset0, charset1)) :- CallStm(result, ret, name, x, isTask),
+                                                                    isConcat(name),
+                                                                    StargStm(name, st0, 0, type0),
+                                                                    StargStm(name, st1, 1, type1),
+                                                                    StringLattice(st0, charset0),
+                                                                    StringLattice(st1, charset1).
+                                                                    
+StringLattice(result, StringAnalysis.concat(charset0, charset1)) :- CallvirtStm(result, ret, name, x, isTask),
+                                                                    isConcat(name),
+                                                                    StargStm(name, st0, 0, type0),
+                                                                    StargStm(name, st1, 1, type1),
+                                                                    StringLattice(st0, charset0),
+                                                                    StringLattice(st1, charset1).
+                                                                    
+StringLattice(lv, charset) :- StlocStm(lv, st),
+                              StringLattice(st, charset).
+
+StringLattice(st, charset) :- LdlocStm(st, lv),
+                              StringLattice(lv, charset).
+                              
+StringLattice(r, StringAnalysis.abstract(c)) :- LdstrStm(r, c).
