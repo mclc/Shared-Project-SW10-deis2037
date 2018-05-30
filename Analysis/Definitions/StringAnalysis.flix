@@ -88,6 +88,9 @@ namespace StringAnalysis {
     let Charset<> = (Bot, Top, equ, leq, lub, glb)
 }
 
+lat SecretStrings(k: Str, v: StringAnalysis.Charset)
+lat StringLattice(k: Str, v: StringAnalysis.Charset)
+
 StringLattice(result, StringAnalysis.concat(charset0, charset1)) :- CallStm(result, ret, name, x, isTask),
                                                                     isConcat(name),
                                                                     StargStm(name, st0, 0, type0),
