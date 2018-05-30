@@ -20,8 +20,9 @@ TaintListStack(ret, source, type) :- CallvirtStm(st, ret, name, type, isTask),
                                      TaintListArg(name, argNo, source, x).
 
 // If the method is Task, also add it to TaintListTask
-TaintListTask(ret, "UNKNOWN", type) :- CallvirtStm(st, ret, name, type, isTask),
-                                    isTrue(isTask).
+TaintListTask(ret, source, type) :- CallvirtStm(st, ret, name, type, isTask),
+                                       TaintListStack(x, source, y), 
+                                       isTrue(isTask).
                                      
 // If the return value is tainted, so should the value pushed to the stack be
 TaintListStack(st, source, type) :- CallvirtStm(st, ret, name, x, isTask),
