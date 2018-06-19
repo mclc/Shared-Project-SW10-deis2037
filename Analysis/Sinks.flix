@@ -61,3 +61,19 @@ AddToSinks("System.Net.Http.HttpClient::SendAsync(System.Net.Http.HttpRequestMes
 AddToSinks("System.Net.Http.HttpMessageInvoker::SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)").
 AddToSinks("System.Net.Http.HttpClient::SendAsync(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpCompletionOption)").
 AddToSinks("System.Net.Http.HttpClient::SendAsync(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)").
+
+// RestSharp (only some methods) - currently not support for NewObj..
+AddToSinks("RestSharp.RestRequest::AddBody(System.Object)").
+AddToSinks("RestSharp.RestRequest::set_Resource(System.String)").
+
+AddToSinks("RestSharp.Parameter::set_Name(System.String)").
+AddToSinks("RestSharp.Parameter::set_Value(System.Object)").
+AddToSinks("RestSharp.Parameter::set_ContentType(System.String)").
+
+AddToSinks("RestSharp.RestRequest::AddParameter(System.String,System.Object)").
+AddToSinks("RestSharp.RestRequest::AddParameter(System.String,System.Object,RestSharp.ParameterType)").
+AddToSinks("RestSharp.RestRequest::AddParameter(System.String,System.Object,System.String,RestSharp.ParameterType)").
+
+AddToSinks("RestSharp.RestRequest::AddOrUpdateParameter(System.String,System.Object)").
+AddToSinks("RestSharp.RestRequest::AddOrUpdateParameter(System.String,System.Object,RestSharp.ParameterType)").
+AddToSinks("RestSharp.RestRequest::AddOrUpdateParameter(System.String,System.Object,System.String,RestSharp.ParameterType)").
