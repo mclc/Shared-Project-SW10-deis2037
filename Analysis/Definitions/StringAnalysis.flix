@@ -91,14 +91,14 @@ namespace StringAnalysis {
 lat SecretStrings(k: Str, v: StringAnalysis.Charset)
 lat StringLattice(k: Str, v: StringAnalysis.Charset)
 
-StringLattice(result, StringAnalysis.concat(charset0, charset1)) :- CallStm(result, ret, name, x, isTask),
+StringLattice(result, StringAnalysis.concat(charset0, charset1)) :- CallStm(result, ret, name, x, isTask, trace),
                                                                     isConcat(name),
                                                                     StargStm(name, st0, 0, type0),
                                                                     StargStm(name, st1, 1, type1),
                                                                     StringLattice(st0, charset0),
                                                                     StringLattice(st1, charset1).
                                                                     
-StringLattice(result, StringAnalysis.concat(charset0, charset1)) :- CallvirtStm(result, ret, name, x, isTask),
+StringLattice(result, StringAnalysis.concat(charset0, charset1)) :- CallvirtStm(result, ret, name, x, isTask, trace),
                                                                     isConcat(name),
                                                                     StargStm(name, st0, 0, type0),
                                                                     StargStm(name, st1, 1, type1),
