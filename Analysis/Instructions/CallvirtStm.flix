@@ -10,14 +10,14 @@ TaintListStack(ret, name, type, trace) :- CallvirtStm(st, ret, name, type, isTas
                                           Sources(name, v).  
 
 // If the method is defined in firstArgumentTainted, the result should be tainted if the first argument is.
-TaintListStack(ret, source, type, trace) :- CallvirtStm(st, ret, name, x, isTask, y),
+TaintListStack(ret, source, type, trace) :- CallvirtStm(st, ret, name, type, isTask, x),
                                             firstArgumentTaint(name),
-                                            TaintListArg(name, 0, source, type, trace).
+                                            TaintListArg(name, 0, source, y, trace).
 
 // If the method is defined in anyArgumentTainted, the result should be tainted if any argument is.
 TaintListStack(ret, source, type, trace) :- CallvirtStm(st, ret, name, type, isTask, x),
                                             anyArgumentTaint(name),
-                                            TaintListArg(name, argNo, source, x, trace).
+                                            TaintListArg(name, argNo, source, y, trace).
 
 // If the method is Task, also add it to TaintListTask
 TaintListTask(ret, source, type, trace) :- CallvirtStm(st, ret, name, type, isTask, z),
